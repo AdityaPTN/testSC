@@ -22,7 +22,7 @@ export default ({ getModal, setGetModal, getShipment }) => {
     return dataTime;
   };
 
-  return getModel ? (
+  return getModal ? (
     <div className='fixed inset-0 z-10 overflow-y-auto'>
       <div className='fixed inset-0 w-full h-full bg-black opacity-40' onClick={() => setGetModal(false)}>
       </div>
