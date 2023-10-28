@@ -21,7 +21,7 @@ const index = () => {
     getShipmentCount,
   } = useContext(TrackingContext);
 
-  const [createShipmentModel, setCreateShipmentModel] = useState(false);
+  const [createShipmentModal, setCreateShipmentModal] = useState(false);
   const [openProfile, setOpenProfile] = useState(false);
   const [startModal, setStartModal] = useState(false)
   const [completeModal, setCompleteModal] = useState(false)
@@ -46,13 +46,13 @@ const index = () => {
         setStartModal={setStartModal}
       />
       <Table 
-        setCreateShipmentModel={setCreateShipmentModel}
+        setCreateShipmentModal={setCreateShipmentModal}
         allShipmentsdata={allShipmentsdata}
       />
       <Form 
-        createShipmentModel={createShipmentModel}
+        createShipmentModal={createShipmentModal}
         createShipment={createShipment}
-        setCreateShipmentModel={setCreateShipmentModel}
+        setCreateShipmentModal={setCreateShipmentModal}
       />
       <Profile 
         openProfile={openProfile}
